@@ -20,3 +20,14 @@ html {
 .rules {
   font-weight: bold;
 }
+
+.card {
+  font-weight: 900;
+  font-size: 7rem;
+  color: rgb(255, 255, 255);
+  color: rgb(204, 204, 204);
+  background-color: rgb(153, 153, 153);
+  height: 12.5rem;
+  border: 4px solid #ffffff;
+  border-radius: 8px;
+}
