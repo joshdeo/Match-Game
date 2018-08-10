@@ -9,8 +9,8 @@ var MatchGame = {};
   Generates and returns an array of matching card values.
  */
 MatchGame.generateCardValues = function () {
-  var values = [];
-}
+  var values = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9,]
+};
 
 for (var loop = 1; loop <= 8; loop++) {
   console.log('Working' +loop);
@@ -18,7 +18,13 @@ for (var loop = 1; loop <= 8; loop++) {
   values.push(loop);
   }
 
-  
+var random = [];
+while (i > random.length) {
+  console.log('whileloop' +i);
+  i++;
+  math.random();
+}
+
 
 
 /*
