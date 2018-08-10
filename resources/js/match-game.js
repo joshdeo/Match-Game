@@ -8,12 +8,18 @@ var MatchGame = {};
 /*
   Generates and returns an array of matching card values.
  */
-
- var array = [[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6], [7, 7], [8, 8]];
-
 MatchGame.generateCardValues = function () {
-  return array;
-};
+  var values = [];
+}
+
+for (var loop = 1; loop <= 8; loop++) {
+  console.log('Working' +loop);
+  values.push(loop);
+  values.push(loop);
+  }
+
+  
+
 
 /*
   Converts card values to jQuery card objects and adds them to the supplied game
