@@ -9,7 +9,7 @@ var MatchGame = {};
   Generates and returns an array of matching card values.
  */
 MatchGame.generateCardValues = function () {
-  var values = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9,]
+  var values = []
   values.splice();
 };
 
@@ -24,11 +24,11 @@ while (i > random.length) {
   console.log('whileloop' +i);
   i++;
   math.floor(math.random()*9);
-  var = (random[]);
   random.push();
 }
+var = (random[]);
 
-
+generateCardValues();
 /*
   Converts card values to jQuery card objects and adds them to the supplied game
   object.
