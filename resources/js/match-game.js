@@ -8,25 +8,25 @@ var MatchGame = {};
 /*
   Generates and returns an array of matching card values.
  */
-MatchGame.generateCardValues = function () {
+MatchGame.generateCardValues = function() {
   var values = []
   values.splice();
 };
 
 for (var loop = 1; loop <= 8; loop++) {
-  console.log('Working' +loop);
+  console.log('Working' + loop);
   values.push(loop);
   values.push(loop);
-  }
+}
 
 var random = [];
-while (i > random.length) {
-  console.log('whileloop' +i);
-  i++;
-  math.floor(math.random()*9);
-  random.push();
+
+while (16 > random.length) {
+
+  let num = math.floor(math.random() * values.length);
+  var randNum = values.splice(num, 1);
+  random.push(randNum);
 }
-var = (random[]);
 
 generateCardValues();
 /*
