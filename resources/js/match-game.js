@@ -10,6 +10,7 @@ var MatchGame = {};
  */
 MatchGame.generateCardValues = function () {
   var values = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9,]
+  values.splice();
 };
 
 for (var loop = 1; loop <= 8; loop++) {
@@ -22,9 +23,10 @@ var random = [];
 while (i > random.length) {
   console.log('whileloop' +i);
   i++;
-  math.random();
+  math.floor(math.random()*9);
+  var = (random[]);
+  random.push();
 }
-
 
 
 /*
