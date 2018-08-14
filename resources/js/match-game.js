@@ -22,13 +22,12 @@ for (var loop = 1; loop <= 8; loop++) {
 var random = [];
 
 while (16 > random.length) {
-
   let num = math.floor(math.random() * values.length);
   var randNum = values.splice(num, 1);
   random.push(randNum);
 }
 
-generateCardValues();
+return random
 /*
   Converts card values to jQuery card objects and adds them to the supplied game
   object.
