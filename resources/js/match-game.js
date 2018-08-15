@@ -24,16 +24,16 @@ MatchGame.generateCardValues = function() {
 $(document).ready(function() {
       MatchGame.renderCards = function(cardValues, $game) {
         var colors = {
-          
+
         }
         $game.empty();
 
 
       }
 
-      /*Flips over a given card and checks to see if two cards are flipped over. Updates styles on flipped cards depending whether they are a match or not.*/
+/*Flips over a given card and checks to see if two cards are flipped over. Updates styles on flipped cards depending whether they are a match or not.*/
 
-      MatchGame.flipCard = function($card, $game) {
-
-      };
-    }
+MatchGame.flipCard = function($card, $game) {
+  
+  };
+}
