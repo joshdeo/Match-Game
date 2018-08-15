@@ -20,9 +20,9 @@ MatchGame.generateCardValues = function() {
 
   var random = [];
 
-  while (16 > random.length) {
+  while (random.length > 0) {
     let num = Math.floor(Math.random() * values.length);
-    var randNum = values.splice(num, 1);
+    var randNum = values.splice(num, 1)[0];
     random.push(randNum);
   }
   return random;
@@ -47,20 +47,18 @@ MatchGame.renderCards = function(cardValues, $game) {
 
   for (var object = 0; object < cardValues.length; object++) {
     var value = cardValues[object];
-    var color = color[value - 1];
+    var color = colors[value - 1];
     var data = {
       value: value,
       color: color,
       isFlipped: false
     }
+    var $cardElement = $('<div class="col-xs-12 card">')
+    $cardElement.data();
   }
 
-  var $cardElement = $('<div class="col-md-9">')
-  $cardElement.data();
 
   $game.append($cardElement);
-
-
 };
 
 /*Flips over a given card and checks to see if two cards are flipped over. Updates styles on flipped cards depending whether they are a match or not.*/
