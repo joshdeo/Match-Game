@@ -36,15 +36,23 @@ $(document).ready(function() {
         ];
 
         $game.empty();
-        $game.data('isFlipped')
+        $game.data('flippedCards',[]);
 
         for (var object = 0; object < cardValues.length; object++) {
-          var data =
+          var value = cardValues[object];
+          var color = color[value - 1];
+          var data = {
             value:
             color:
-            isFlipped:
-        };
-      }
+            isFlipped: false
+          }
+        }
+
+        var $cardElement = $('<div class="col-md-9">')
+        $cardElement.data();
+
+
+      };
 
       /*Flips over a given card and checks to see if two cards are flipped over. Updates styles on flipped cards depending whether they are a match or not.*/
 
