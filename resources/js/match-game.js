@@ -20,7 +20,7 @@ MatchGame.generateCardValues = function() {
 
   var random = [];
 
-  while (random.length > 0) {
+  while (values.length > 0) {
     let num = Math.floor(Math.random() * values.length);
     var randNum = values.splice(num, 1)[0];
     random.push(randNum);
@@ -55,10 +55,9 @@ MatchGame.renderCards = function(cardValues, $game) {
     }
     var $cardElement = $('<div class="col-xs-12 card">')
     $cardElement.data();
+
+    $game.append($cardElement);
   }
-
-
-  $game.append($cardElement);
 };
 
 /*Flips over a given card and checks to see if two cards are flipped over. Updates styles on flipped cards depending whether they are a match or not.*/
