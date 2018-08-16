@@ -58,10 +58,10 @@ MatchGame.renderCards = function(cardValues, $game) {
     $cardElement.data(data);
 
     $game.append($cardElement);
-  })
-$('.card').click(function() {
-    MatchGame.flipCard($(this), $('#game'));
   }
+  $('.card').click(function() {
+    MatchGame.flipCard($(this), $('#game'));
+  })
 };
 
 /*Flips over a given card and checks to see if two cards are flipped over.
