@@ -38,3 +38,12 @@ h3 {
   border-radius: 8px;
   cursor: default;
 }
+
+footer {
+  display: flex;
+  background-color: white;
+}
+
+footer span {
+  justify-content: center;
+}
