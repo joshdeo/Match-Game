@@ -39,6 +39,10 @@ h3 {
   cursor: default;
 }
 
+button {
+  margin-top: 1rem;
+}
+
 footer {
   display: flex;
   background-color: white;
