@@ -9,6 +9,9 @@ $(document).ready(function() {
   var $game = $('#game');
   var values = MatchGame.generateCardValues();
   MatchGame.renderCards(values, $game);
+  $('#button').click(function() {
+    console.log('Button Works')
+  })
 });
 
 MatchGame.generateCardValues = function() {
